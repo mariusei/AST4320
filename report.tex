@@ -1,0 +1,119 @@
+\documentclass[a4paper,11pt]{article}
+
+
+%\documentclass[journal = ancham]{achemso}
+%\setkeys{acs}{useutils = true}
+%\usepackage{fullpage}
+%\usepackage{natbib}
+\pretolerance=2000
+\tolerance=6000
+\hbadness=6000
+%\usepackage[landscape]{geometry}
+%\usepackage{pxfonts}
+%\usepackage{cmbright}
+%\usepackage[varg]{txfonts}
+%\usepackage{mathptmx}
+%\usepackage{tgtermes}
+\usepackage[utf8]{inputenc}
+%\usepackage{fouriernc}
+%\usepackage[adobe-utopia]{mathdesign}
+\usepackage[T1]{fontenc}
+%\usepackage[norsk]{babel}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+%\usepackage[version=3]{mhchem}
+\usepackage{pstricks}
+\usepackage[font=small,labelfont=bf,tableposition=below]{caption}
+\usepackage{subfig}
+%\usepackage{varioref}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{sverb}
+%\usepackage{microtype}
+%\usepackage{enumerate}
+\usepackage{enumitem}
+%\usepackage{lineno}
+%\usepackage{booktabs}
+%\usepackage{changepage}
+%\usepackage[flushleft]{threeparttable}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{mathtools}
+%\usepackage{etoolbox}
+%\usepackage{xstring}
+
+\floatstyle{plaintop}
+\restylefloat{table}
+%\floatsetup[table]{capposition=top}
+
+\setcounter{secnumdepth}{0}
+
+\newcommand{\tr}{\, \text{tr}\,}
+\newcommand{\diff}{\ensuremath{\; \text{d}}}
+\newcommand{\sgn}{\ensuremath{\; \text{sgn}}}
+\newcommand{\UA}{\ensuremath{_{\uparrow}}}
+\newcommand{\RA}{\ensuremath{_{\rightarrow}}}
+\newcommand{\QED}{\left\{ \hfill{\textbf{QED}} \right\}}
+
+%\newcommand{\diff}{%
+%    \IfEqCase{frac{\diff}{%
+%        {\ensuremath{frac{\text{d}} }}%
+%        {\ensuremath{\; \text{d}} }% 
+%    }[\PackageError{diff}{Problem with diff}{}]%
+%}%
+
+
+\date{\today}
+\title{\normalsize{Article review:\\ \textbf{Empirical constraints no the star formation and redshift dependence of the Ly$\alpha$ 'effective' escape fraction} \\
+\href{http://dx.doi.org/10.1093/mnras/stt1520}{doi:10.1093/mnras/stt1520}} }
+\author{Marius Berge Eide \\ \texttt{mariusei@astro.uio.no}}
+
+
+\begin{document}
+
+
+\onecolumn
+\maketitle{}
+
+The article that is reviewed is '\textit{Empirical constraints on the star formation and redshift dependence of the Ly$\alpha$ 'effective' escape fraction}' by M.~Dijkstra and A.~Jeeson-Daniel, and was published in the \textit{Monthly Notices of the Royal Astronomical Society} vol.~435, pp.~3333-3341 (2013).
+
+\section{The most important results of the paper}
+The field that the authors are working in is radiation transport through the intergalactic medium (IGM) as well as the interstellar (ISM) and circum galactic media (CGM). The article examines the fraction of generated Ly$\alpha$ radiation that is able to escape from high redshift galaxies by deriving constraints on the effective escape fraction
+\begin{equation}
+    f_{\rm esc}^{\rm eff} \equiv \frac{L_\alpha}{L_{\alpha,\rm int}}
+    \label{eq:escfrac}
+\end{equation}
+where $L_\alpha$ is the observed Ly$\alpha$ luminosity, and $L_{\alpha, \rm int}$ is the \textit{intrinsic} Ly$\alpha$ luminosity -- that is, the undamped luminosity in the absence of absorbing and scattering media.
+
+The intrinsic Ly$\alpha$ luminosity is related to the star formation rate, denoted $\psi$ (units $\rm M_{\odot} \, yr^{-1}$), not very unlike the way H$\alpha$ is related to the star formation rate. Both lines originate from recombination events in HII regions, these events ``\textit{closely trace ongoing star formation}'',
+
+\[ L_{\alpha,\rm int} = k \times \left( \frac{\psi}{\rm M_\odot \, yr^{-1}} \right) \]
+with $k = 10^{42}$ erg s$^{-1}$. The article constrains $f_{\rm esc}^{\rm eff}$ as a function of redshift. The main findings are that the escape fraction increases as a function of redshift until $z=6$. The article also shows that it is possible to reproduce observed Ly$\alpha$ luminosity functions for individual redshift bins using a constant $\psi$. The authors give several figures where the logarithm of the luminosity functions $n$ are plotted against  the logarithm of Ly$\alpha$ luminosity, showing comparisons between observations and the proposed models relating the luminosity functions to the star formation functions. The proposed models fit the observational data well.
+
+\section{Why interesting?}
+The article sheds light on the relation between stellar formation and observations of the Ly$\alpha$ line which can be used as an observable for galaxies not visible in other colour bands. The results show a relation (or more precisely, the \textit{lack of}) between the effective escape fraction and the star formation rate. The results can be used to better understand the processes that lead to the re-ionisation of the universe. 
+
+
+\section{Methodology}
+The article briefly and concisely describes the assumptions made and the proposed equations governing the luminosity functions, having the Ly$\alpha$ luminosity function
+\begin{equation}
+    \frac{\!\diff n}{\!\diff \log L_\alpha} = \frac{\!\diff n}{\!\diff \log \psi} \frac{\! \diff \log \psi}{\! \diff \log L_\alpha} = \frac{\! \diff n}{\!\diff \log \psi}\Bigg|_{\psi=L_\alpha / (kf_{\rm esc}^{\rm eff})}
+    \label{eq:lumfunc}
+\end{equation}
+or the integral form where variations in $f_{\rm esc}^{\rm eff}$ are allowed for a fixed $\psi$. 
+
+\section{Caveats}
+Much of the work in the article is comparisons with other articles covering the same topic. Without prior knowledge to these authors' work, it can be difficult to objectively evaluate the importance (or reliability) of the external sources. The article does however asses possible uncertainties in the results of the referred articles and discuss whether the results presented also are prone to the same weaknesses that of the referred results.
+
+\section{Further work}
+The observational basis that make it possible to develop models as those discussed in the article can be greatly improved with new ground- and space-based telescopes and instruments, like the MUSE for the VLT, the Hyper Suprime Cam for the Subaru telescope and results from the HETDEX experiment. These will all be able to observe Ly$\alpha$ emitters at fainter luminosities and higher redshifts, and also reduce the uncertainties.
+
+
+
+\bibliography{referanser}
+\bibliographystyle{plain}
+
+
+\end{document}
+
